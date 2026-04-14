@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --muted: #121212;
+  --surface: #0d0d0d;
+  --surface-elevated: #171717;
+  --card: #111111;
+  --line: rgba(255, 255, 255, 0.12);
+  --line-strong: rgba(255, 255, 255, 0.2);
+  --accent: #ff6b00;
+  --accent-strong: #ff8a33;
+  --accent-soft: rgba(255, 107, 0, 0.16);
+  --text-muted: #999999;
+  --text-soft: #666666;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-text-muted: var(--text-muted);
+  --color-text-soft: var(--text-soft);
+  --font-sans: var(--font-montserrat);
+}
+
+html {
+  background:
+    radial-gradient(circle at top, rgba(255, 107, 0, 0.18), transparent 26%),
+    linear-gradient(180deg, #070707 0%, #050505 100%);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+  letter-spacing: -0.03em;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: rgba(255, 107, 0, 0.28);
+  color: #ffffff;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent 80%);
+  opacity: 0.35;
+}
+
+.section-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top right, rgba(255, 107, 0, 0.18), transparent 32%);
+  opacity: 0.8;
+}
+
+.frame-line {
+  position: relative;
+}
+
+.frame-line::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  border-radius: inherit;
+}
