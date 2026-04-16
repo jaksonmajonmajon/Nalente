@@ -38,7 +38,7 @@ ${mensagem}`;
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-neutral-50 rounded-4xl border border-neutral-200 p-6 grid gap-4 text-neutral-400"
+      className="bg-neutral-50 rounded-4xl border border-neutral-200 p-6 grid gap-4 text-neutral-500"
     >
             <input
               className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm"
@@ -63,7 +63,7 @@ ${mensagem}`;
             />
             <input
               type="date"
-              className="text-neutral-400 w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm"
+              className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm"
               placeholder="Data do evento"
               name="data"
             />
