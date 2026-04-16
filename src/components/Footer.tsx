@@ -3,9 +3,7 @@ import Link from "next/link";
 const navLinks = [
   { href: "/", label: "Início" },
   { href: "/eventos", label: "Eventos" },
-  { href: "/portfolio", label: "Portfólio" },
   { href: "/galeria", label: "Galeria" },
-  { href: "/organizadores", label: "Organizadores" },
   { href: "/contato", label: "Contato" },
 ];
 
@@ -69,8 +67,8 @@ export function Footer() {
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white/70 transition-colors hover:text-accent">
               Instagram: @nalentefotos
             </a>
-            <a href="mailto:contato@nalente.com.br" className="text-white/70 transition-colors hover:text-accent">
-              Email: contato@nalente.com.br
+            <a href="mailto:contato@nalentefotos.com.br" className="text-white/70 transition-colors hover:text-accent">
+              Email: comercial@nalentefotos.com.br
             </a>
             <p className="rounded-4xl border border-accent/30 bg-accent/10 px-4 py-4 text-white">
               Atendimento pensado para eventos que precisam de imagem forte, operação fluida e entrega profissional.

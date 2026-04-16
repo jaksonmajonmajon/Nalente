@@ -16,16 +16,16 @@ export function ContatoForm() {
     const local = (form.local as HTMLInputElement).value;
     const mensagem = (form.mensagem as HTMLTextAreaElement).value;
 
-    const texto =`📸 *Novo contato - Site* 
-    
-👤 *Nome:* ${nome} 
-🏢 *Evento:* ${empresa} 
-📧 *Email:* ${email}
-📱 *Telefone:* ${telefone} 
-📅 *Data:* ${data} 
-📍 *Local:* ${local}
+    const texto =` *Novo contato - Site* 
 
-📝 *Mensagem:* 
+ *Nome:* ${nome} 
+ *Evento:* ${empresa} 
+ *Email:* ${email}
+ *Telefone:* ${telefone} 
+ *Data:* ${data} 
+ *Local:* ${local}
+
+ *Mensagem:* 
 ${mensagem}`;
 
     const numero = "5511954462390";
@@ -63,7 +63,7 @@ ${mensagem}`;
             />
             <input
               type="date"
-              className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm"
+              className="text-neutral-400 w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm"
               placeholder="Data do evento"
               name="data"
             />

@@ -25,17 +25,17 @@ const quickActions = [
   },
   {
     label: "Ver portfólio",
-    href: "/portfolio",
+    href: "/eventos",
     icon: Camera,
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/nalentestudio",
+    href: "https://instagram.com/vcnalente.fotos",
     icon: InstagramLogo,
   },
   {
     label: "Enviar e-mail",
-    href: "mailto:contato@nalente.com.br",
+    href: "mailto:comercial@nalentefotos.com.br",
     icon: EnvelopeSimple,
   },
 ];
@@ -155,11 +155,11 @@ export default function CardPage() {
               </div>
               <div className="rounded-4xl border border-black/10 bg-[#f7f7f7] px-4 py-4">
                 <p className="font-semibold">Instagram</p>
-                <p className="mt-1 text-[#555555]">@nalentestudio</p>
+                <p className="mt-1 text-[#555555]">@vcnalente.fotos</p>
               </div>
               <div className="rounded-4xl border border-black/10 bg-[#f7f7f7] px-4 py-4">
                 <p className="font-semibold">E-mail</p>
-                <p className="mt-1 text-[#555555]">contato@nalente.com.br</p>
+                <p className="mt-1 text-[#555555]">comercial@nalentefotos.com.br</p>
               </div>
             </div>
           </div>

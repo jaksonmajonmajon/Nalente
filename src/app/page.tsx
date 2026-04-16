@@ -56,7 +56,7 @@ export default function Home() {
         title="Fotografia profissional para eventos que continuam gerando valor depois do último aplauso"
         subtitle="A NA LENTE transforma momentos em memória, conteúdo e percepção de valor. Cobrimos, organizamos, selecionamos e entregamos cada registro com a energia do evento e a estrutura que uma marca profissional exige."
         primaryAction={{ label: "Solicitar proposta", href: "/contato" }}
-        secondaryAction={{ label: "Ver portfólio", href: "/portfolio" }}
+        secondaryAction={{ label: "Ver portfólio", href: "/eventos" }}
         tertiaryAction={{ label: "Conhecer processo", href: "#processo" }}
         backgroundImage="/images/hero-evento2.png"
       />
