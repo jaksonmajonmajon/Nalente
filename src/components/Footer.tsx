@@ -64,8 +64,8 @@ export function Footer() {
             <a href="https://wa.me/5511954462390" target="_blank" rel="noopener noreferrer" className="text-white/70 transition-colors hover:text-accent">
               WhatsApp: (11) 95446-2390
             </a>
-            <a href="https://www.instagram.com/vcnalente.fotos" target="_blank" rel="noopener noreferrer" className="text-white/70 transition-colors hover:text-accent">
-              Instagram: @vcnalente.fotos
+            <a href="https://www.instagram.com/vocenalente.fotos" target="_blank" rel="noopener noreferrer" className="text-white/70 transition-colors hover:text-accent">
+              Instagram: @vocenalente.fotos
             </a>
             <a href="mailto:comercial@nalentefotos.com.br" className="text-white/70 transition-colors hover:text-accent">
               Email: comercial@nalentefotos.com.br

@@ -30,7 +30,7 @@ const quickActions = [
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/vcnalente.fotos",
+    href: "https://instagram.com/vocenalente.fotos",
     icon: InstagramLogo,
   },
   {
@@ -155,7 +155,7 @@ export default function CardPage() {
               </div>
               <div className="rounded-4xl border border-black/10 bg-[#f7f7f7] px-4 py-4">
                 <p className="font-semibold">Instagram</p>
-                <p className="mt-1 text-[#555555]">@vcnalente.fotos</p>
+                <p className="mt-1 text-[#555555]">@vocenalente.fotos</p>
               </div>
               <div className="rounded-4xl border border-black/10 bg-[#f7f7f7] px-4 py-4">
                 <p className="font-semibold">E-mail</p>

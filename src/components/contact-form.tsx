@@ -1,9 +1,28 @@
 'use client';
 
+import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 
+function formatDateForWhatsapp(value: string) {
+  if (!value) return "";
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    const [year, month, day] = value.split("-");
+    return `${day}/${month}/${year}`;
+  }
+
+  if (/^\d{2}\/\d{2}\/\d{4}$/.test(value)) {
+    return value;
+  }
+
+  return value;
+}
+
 export function ContatoForm() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [dataInputType, setDataInputType] = useState<"text" | "date">("text");
+  const [dataValue, setDataValue] = useState("");
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const form = e.currentTarget;
@@ -12,8 +31,9 @@ export function ContatoForm() {
     const empresa = (form.empresa as HTMLInputElement).value;
     const email = (form.email as HTMLInputElement).value;
     const telefone = (form.telefone as HTMLInputElement).value;
-    const data = (form.data as HTMLInputElement).value;
     const local = (form.local as HTMLInputElement).value;
+    const dataRaw = (form.data as HTMLInputElement).value;
+    const data = formatDateForWhatsapp(dataRaw);
     const mensagem = (form.mensagem as HTMLTextAreaElement).value;
 
     const texto =` *Novo contato - Site* 
@@ -62,10 +82,18 @@ ${mensagem}`;
               name="telefone"
             />
             <input
-              type="date"
+              type={dataInputType}
               className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm"
               placeholder="Data do evento"
               name="data"
+              value={dataValue}
+              onChange={(e) => setDataValue(e.target.value)}
+              onFocus={() => setDataInputType("date")}
+              onBlur={() => {
+                if (!dataValue) {
+                  setDataInputType("text");
+                }
+              }}
             />
             <input
               className="w-full rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-sm"

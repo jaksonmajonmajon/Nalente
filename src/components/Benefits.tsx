@@ -42,7 +42,7 @@ export function Benefits() {
             Quando a cobertura é bem pensada, ela fortalece a memória, melhora a percepção do público, cria ativos para divulgação e mostra mais profissionalismo para patrocinadores, marcas e organizadores.
           </p>
 
-          <div className="mt-8 rounded-[32px] border border-black/10 bg-[#111111] p-7 text-white shadow-[0_28px_70px_rgba(0,0,0,0.12)]">
+          <div className="mt-8 rounded-4xl border border-black/10 bg-[#111111] p-7 text-white shadow-[0_28px_70px_rgba(0,0,0,0.12)]">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
               Proposta central
             </p>
